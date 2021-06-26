@@ -1,0 +1,19 @@
+.box {
+  padding: 1rem;
+  width: auto;
+  transition: box-shadow 0.5s;
+}
+
+.box__image {
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+}
+
+.box__title {
+  padding-top: 1rem;
+}
+
+.box:hover {
+  box-shadow: 0 0 15px var(--border-color);
+}

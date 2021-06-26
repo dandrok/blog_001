@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--website-width);
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1.25px var(--border-color);
+}
+
+.navbar__logo_font {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.navbar__logo_sec {
+  font-size: 0.5rem;
+  position: relative;
+  bottom: 0.65rem;
+  left: 5.75rem;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu li:first-child {
+  padding-right: 2rem;
+}

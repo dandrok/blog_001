@@ -1,0 +1,16 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+  grid-auto-flow: dense;
+  margin: 0 auto;
+  max-width: var(--website-width);
+  padding-top: 1rem;
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* img {
+  height: 250px;
+  width: 250px;
+} */
