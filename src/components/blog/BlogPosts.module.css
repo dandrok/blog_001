@@ -1,4 +1,4 @@
-.posts {
+.card {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 
@@ -9,8 +9,3 @@
   gap: 1rem;
   justify-items: center;
 }
-
-/* img {
-  height: 250px;
-  width: 250px;
-} */

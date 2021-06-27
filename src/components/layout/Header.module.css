@@ -27,3 +27,8 @@
 .navbar__menu li:first-child {
   padding-right: 2rem;
 }
+
+.navbar__menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

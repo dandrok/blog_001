@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import styles from './BlogPosts.module.css'
+// import styles from './BlogPosts.module.css'
 import Post from './Post'
+import styles from './BlogPosts.module.css'
 
 const BlogPosts = () => {
   const [data, setData] = useState([])
@@ -29,14 +30,15 @@ const BlogPosts = () => {
   // }
 
   return (
-    <section className={styles.posts}>
+    <section className={styles.card}>
       {data.map((item) => {
         return (
           <Post
             key={item.id}
+            id={item.id}
             title={item.title}
             body={item.body}
-            random={Math.floor(Math.random() * 200) + 1}
+            random={Math.floor(Math.random() * 500) + 1}
           />
         )
       })}
