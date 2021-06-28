@@ -1,8 +1,10 @@
 import styles from './Post.module.css'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import FavoritesContext from '../../store/favorites-context'
 
 const Post = ({ title, body, random, id }) => {
+  const [colorBtn, setColorBtn] = useState(false)
+
   const favoritesCtx = useContext(FavoritesContext)
 
   const itemIsFavorite = favoritesCtx.itemIsFavorite(id)
@@ -26,7 +28,10 @@ const Post = ({ title, body, random, id }) => {
         src={`https://rickandmortyapi.com/api/character/avatar/${random}.jpeg`}
         alt='test'
       />
-      <button className={styles.box__btn} onClick={toggleFavoriteStatusHandler}>
+      <button
+        className={itemIsFavorite ? styles.box__btn_two : styles.box__btn}
+        onClick={toggleFavoriteStatusHandler}
+      >
         {itemIsFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
       </button>
       <h4 className={styles.box__title}>{title}</h4>

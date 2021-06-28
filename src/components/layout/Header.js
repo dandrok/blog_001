@@ -13,10 +13,14 @@ const Header = () => {
       <nav>
         <ul className={styles.navbar__menu}>
           <li>
-            <Link to='/'>Posts</Link>
+            <Link to='/' className={styles.navbar__links}>
+              Posts
+            </Link>
           </li>
           <li>
-            <Link to='/favorite-posts'> Favorite Posts</Link>
+            <Link className={styles.navbar__links} to='/favorite-posts'>
+              Favorite Posts
+            </Link>
           </li>
         </ul>
       </nav>

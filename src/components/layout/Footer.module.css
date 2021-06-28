@@ -1,0 +1,24 @@
+.footer {
+  border-top: solid 1.25px var(--border-color);
+  margin: 0 auto;
+  max-width: var(--website-width);
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_info {
+  color: var(--second-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+.footer_info > span {
+  color: rgb(250, 100, 100);
+}
+.footer_info > a {
+  color: var(--second-color);
+  text-decoration: underline;
+}

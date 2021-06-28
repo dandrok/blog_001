@@ -34,3 +34,20 @@
 .box__btn:active {
   border: 1px var(--main-color) dashed;
 }
+
+.box__btn_two {
+  padding: 0.5rem;
+  background: var(--second-color);
+  color: var(--main-color);
+  border: solid 1px var(--border-color);
+  transition: background 0.5s;
+}
+
+.box__btn_two:hover {
+  background: rgb(236, 96, 96);
+  color: var(--main-color);
+}
+
+.box__btn_two:active {
+  border: 1px var(--main-color) dashed;
+}
