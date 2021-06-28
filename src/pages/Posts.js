@@ -1,6 +1,7 @@
 import BlogPosts from '../components/blog/BlogPosts'
-import styles from './Posts.module.css'
+
 import { useState, useEffect } from 'react'
+import Loading from '../components/ui/Loading'
 
 const Posts = () => {
   const [data, setData] = useState([])
@@ -30,16 +31,7 @@ const Posts = () => {
 
   //loading animation
   if (isLoading) {
-    return (
-      <section className={styles.loadingBox}>
-        <div className={styles.loadingBox__loading}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-    )
+    return <Loading />
   }
 
   return (
