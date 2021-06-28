@@ -5,6 +5,7 @@ import styles from './BlogPosts.module.css'
 
 const BlogPosts = () => {
   const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     fetchData()
@@ -16,10 +17,32 @@ const BlogPosts = () => {
 
   const fetchData = async () => {
     let response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    let result = await response.json()
-    setData(result.splice(0, 30))
-    console.log(result)
+    await response
+      .json()
+      .then((finish) => {
+        setIsLoading(false)
+        setData(finish) //.splice(0, 5)
+        console.log(finish)
+      })
+      .catch((error) => {
+        console.error('Houston, we have a problem.. with fetch')
+      })
   }
+
+  //loading animation
+  if (isLoading) {
+    return (
+      <section className={styles.loadingBox}>
+        <div className={styles.loadingBox__loading}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    )
+  }
+
   // const fetchImg = async () => {
   //   let response = await fetch(
   //     'https://jsonplaceholder.typicode.com/albums/1/photos'
