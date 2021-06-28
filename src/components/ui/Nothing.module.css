@@ -1,0 +1,10 @@
+.waiting {
+  margin: 0 auto;
+  max-width: var(--website-width);
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+}

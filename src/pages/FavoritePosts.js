@@ -1,7 +1,8 @@
-import Favorite from '../components/Favorite'
 import FavoritesContext from '../store/favorites-context'
 import { useContext } from 'react'
+
 import BlogPosts from '../components/blog/BlogPosts'
+import Nothing from '../components/ui/Nothing'
 
 const FavoritePosts = () => {
   const favoritesCtx = useContext(FavoritesContext)
@@ -9,9 +10,9 @@ const FavoritePosts = () => {
   let content
 
   if (favoritesCtx.totalFavorites === 0) {
-    content = <p>You got no favorites jet add some.</p>
+    content = <Nothing />
   } else {
-    content = <BlogPosts item={favoritesCtx.favorites} />
+    content = <BlogPosts datas={favoritesCtx.favorites} />
   }
 
   return <>{content}</>
