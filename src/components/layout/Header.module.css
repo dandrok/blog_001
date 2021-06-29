@@ -43,3 +43,10 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.badge {
+  margin-left: 1rem;
+
+  color: var(--red-color);
+  font-weight: 600;
+}

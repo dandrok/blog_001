@@ -1,10 +1,9 @@
 import styles from './Post.module.css'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import FavoritesContext from '../../store/favorites-context'
+import { Link } from 'react-router-dom'
 
 const Post = ({ title, body, random, id }) => {
-  const [colorBtn, setColorBtn] = useState(false)
-
   const favoritesCtx = useContext(FavoritesContext)
 
   const itemIsFavorite = favoritesCtx.itemIsFavorite(id)
@@ -23,11 +22,14 @@ const Post = ({ title, body, random, id }) => {
 
   return (
     <article className={styles.box}>
-      <img
-        className={styles.box__image}
-        src={`https://rickandmortyapi.com/api/character/avatar/${random}.jpeg`}
-        alt='test'
-      />
+      <Link to={`/single-post/${id}`}>
+        <img
+          className={styles.box__image}
+          // src={`https://rickandmortyapi.com/api/character/avatar/${random}.jpeg`}
+          src={`https://rickandmortyapi.com/api/character/avatar/19.jpeg`}
+          alt='test'
+        />
+      </Link>
       <button
         className={itemIsFavorite ? styles.box__btn_two : styles.box__btn}
         onClick={toggleFavoriteStatusHandler}

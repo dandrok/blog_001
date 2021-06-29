@@ -17,6 +17,7 @@ li {
   --font-medium: 500;
   --website-width: 1366px;
   --border-color: rgba(92, 91, 91, 0.5);
+  --red-color: rgb(248, 85, 85);
 }
 
 body {

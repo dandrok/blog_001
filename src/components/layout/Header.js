@@ -1,7 +1,11 @@
+import { useContext } from 'react'
 import styles from './Header.module.css'
 import { Link } from 'react-router-dom'
+import FavoritesContext from '../../store/favorites-context'
 
 const Header = () => {
+  const favoritesCtx = useContext(FavoritesContext)
+
   return (
     <header className={styles.navbar}>
       <div>
@@ -19,7 +23,10 @@ const Header = () => {
           </li>
           <li>
             <Link className={styles.navbar__links} to='/favorite-posts'>
-              Favorite Posts
+              <span>Favorite Posts</span>
+              <span className={styles.badge}>
+                {favoritesCtx.totalFavorites}
+              </span>
             </Link>
           </li>
         </ul>

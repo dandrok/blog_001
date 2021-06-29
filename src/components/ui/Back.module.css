@@ -1,0 +1,22 @@
+.wrong {
+  margin: 0 auto;
+  max-width: var(--website-width);
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 35vh;
+  flex-direction: column;
+}
+
+.wrong > h1 {
+  font-size: 10rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.wrong > h2 {
+  font-weight: 100;
+}

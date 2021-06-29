@@ -11,10 +11,6 @@ const Posts = () => {
     fetchData()
   }, [])
 
-  // useEffect(() => {
-  //   fetchImg()
-  // }, [])
-
   const fetchData = async () => {
     let response = await fetch('https://jsonplaceholder.typicode.com/posts')
     await response

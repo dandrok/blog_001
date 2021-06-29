@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <section className={styles.footer_info}>
         made by&nbsp;
-        <a href='https://github.com/dandrok' target='_blank'>
+        <a href='https://github.com/dandrok' target='_blank' rel='noreferrer'>
           dandrok
         </a>
       </section>
