@@ -1,0 +1,21 @@
+.comment {
+  margin: 0 auto;
+  max-width: var(--website-width);
+  max-width: 600px;
+  box-shadow: 0 0.6px 0.5px rgba(0, 0, 0, 0.048),
+    0 1.4px 1.5px rgba(0, 0, 0, 0.068), 0 2.8px 3.6px rgba(0, 0, 0, 0.086),
+    0 7px 12px rgba(0, 0, 0, 0.13);
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--second-color);
+}
+
+.comment__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.comment__title > a {
+  font-size: 0.75rem;
+}
