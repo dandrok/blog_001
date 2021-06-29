@@ -8,12 +8,12 @@ const Header = () => {
 
   return (
     <header className={styles.navbar}>
-      <div>
+      <Link to='/' className={styles.navbar__logo}>
         <p className={styles.navbar__logo_font}>Landblog</p>
         <div className={styles.navbar__logo_sec}>
           <p>stusik patryk</p>
         </div>
-      </div>
+      </Link>
       <nav>
         <ul className={styles.navbar__menu}>
           <li>

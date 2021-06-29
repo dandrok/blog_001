@@ -20,7 +20,7 @@ const Posts = () => {
         setData(finish) //.splice(0, 5)
         console.log(finish)
       })
-      .catch((error) => {
+      .catch(() => {
         console.error('Houston, we have a problem.. with fetch')
       })
   }
