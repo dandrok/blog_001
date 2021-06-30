@@ -1,6 +1,6 @@
 # Simple blog page
 
-The project required building a home page with fetched posts to which we can then enter and add them to favorites, there are also comments in the post.
+The project required building a home page with fetched posts to which we can then enter and add them to favorites, there are also comments section in the posts.
 
 The whole project was built with react.
 
