@@ -55,3 +55,9 @@
   color: var(--red-color);
   font-weight: 600;
 }
+
+@media only screen and (max-width: 450px) {
+  .navbar__linkOne {
+    display: none;
+  }
+}

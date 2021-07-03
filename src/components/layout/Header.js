@@ -16,7 +16,7 @@ const Header = () => {
       </Link>
       <nav>
         <ul className={styles.navbar__menu}>
-          <li>
+          <li className={styles.navbar__linkOne}>
             <Link to='/' className={styles.navbar__links}>
               Posts
             </Link>
