@@ -13,7 +13,6 @@ The overall UI is not that impressive as my main focus was functionality.
 
 In addition I also added a counter of favorite posts, error page in case the user tries to access a non-existent page, e.g. http://localhost:3000/xyz and animation while waiting for data fetching.
 
-```
-npm install
-npm start
-```
+`npm install`<br>
+`npm start`
+
